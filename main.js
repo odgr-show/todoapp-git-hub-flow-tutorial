@@ -11,15 +11,15 @@ addTodo.addEventListener("click", () => {
     input.value = "";
 });
 
-// document.addEventListener("change", function (e) {
-//     const target = e.target;
-//     if (target.tagName === "INPUT" && target.type === "checkbox") {
-//         if (target.checked) {
-//             target.parentNode.style.textDecoration = "line-through";
-//             target.parentNode.style.color = "#ddd";
-//         } else {
-//             target.parentNode.style.textDecoration = "none";
-//             target.parentNode.style.color = "#000";
-//         }
-//     }
-// });
+document.addEventListener("change", function (e) {
+    const target = e.target;
+    if (target.tagName === "INPUT" && target.type === "checkbox") {
+        if (target.checked) {
+            target.parentNode.style.textDecoration = "line-through";
+            target.parentNode.style.color = "#ccc";
+        } else {
+            target.parentNode.style.textDecoration = "none";
+            target.parentNode.style.color = "#000";
+        }
+    }
+});
